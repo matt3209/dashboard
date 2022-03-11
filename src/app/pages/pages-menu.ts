@@ -52,7 +52,30 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'edit-2-outline',
   },
   {
-    title: 'Faction Rankings',
+    title: 'Region Rankings',
+    icon: 'keypad-outline',
+    link: '/pages/ui-features',
+    children: [
+      {
+        title: 'Grid',
+        link: '/pages/ui-features/grid',
+      },
+      {
+        title: 'Icons',
+        link: '/pages/ui-features/icons',
+      },
+      {
+        title: 'Typography',
+        link: '/pages/ui-features/typography',
+      },
+      {
+        title: 'Animated Searches',
+        link: '/pages/ui-features/search-fields',
+      },
+    ],
+  },
+  {
+    title: 'Wizard Rankings',
     icon: 'keypad-outline',
     link: '/pages/ui-features',
     children: [
