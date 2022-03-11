@@ -1,25 +1,28 @@
 <label for="wizards">Wizard:</label>
 <select name="wizards" id="wizards">
-  <option>Cultheer</option>
   <option>Nero</option>
+  <option>Cultheer</option>
   <option>Turgen</option>
 </select>
 
 <div class="row">
-  <nb-card class="">
-    <div style="display:flex;">
-      <div style="float:inline-start;">
-        <img src="assets/images/nero.png" style="width: 500px;">
-      </div>
-      <div style="display: inline-grid; align-content: space-evenly;">
+
+  <div class="col-md-4">
+    <nb-card class="">
+      <img src="assets/images/nero.png">
+    </nb-card>
+  </div>
+
+  <div class="col-md-4">
+    <div class="col">
+      <nb-card class="">
         <fieldset>
           <div style="display: block; margin-bottom: 10px;">
-            <label>Nero</label>
-            <img src="assets/images/nero.png" style="width: 55px; position: relative;">
+            <label>FIRE</label>
+            <img src="assets/images/fire.png" style="width: 55px; position: relative;">
           </div>
           <div style="display: block;">
             <label>Strength</label>
-            <input label="Str" size="5" disabled="true" placeholder="5" type="text">
           </div>
           <div style="display: block;">
             <label>Dexterity</label>
@@ -37,65 +40,48 @@
             <label>Charisma</label>
             <input label="Str" size="5" disabled="true" placeholder="5" type="text">
           </div>
-        </fieldset>     
-      </div>
-      <div style="display: inline-grid; align-content: space-evenly;">
-        <fieldset>
-          <div style="display: block;">
-            <label>Spells</label>
-          </div>
-          <div style="display: block;">
-            <label>Ludis</label>
-          </div>
-          <div style="display: block;">
-            <label>Ludis</label>
-          </div>
-          <div style="display: block;">
-            <label>Ludis</label>
-          </div>
-          <div style="display: block;">
-            <label>Ludis</label>
-          </div>
-        </fieldset>     
-      </div>
+        </fieldset>
+      </nb-card>
     </div>
-  </nb-card>
-  <nb-card class="col-md-2" style="display: inline-grid; align-content: space-evenly;">
-    <fieldset>
-      <div style="display: block; margin-bottom: 10px; align-content: center;">
-        <label>Tokens:</label>
-        43430.34
-      </div>
-      <div style="display: block;">
-        <label>Burned</label>
-        343
-      </div>
-      <div style="display: block;">
-        <label>Items Bought:</label>
-        15
-      </div>
-      <div style="display: block;">
-        <label>Stats Boosted:</label>
-        32
-      </div>
-      <div style="display: block;">
-        <label>Cost of Next Stat Boost</label>
-        340
-      </div>
-      <div style="display: block;">
-        <label>Cost for next item Boost</label>
-        400
-      </div>
-    </fieldset>
-  </nb-card>
+  </div>
+
+  <div class="col-md-4">
+
+    <div class="col">
+      <nb-card class="">
+        <nb-card-header>SPELLS</nb-card-header>
+        <nb-list>
+          <nb-list-item>LUCIS</nb-list-item>
+          <nb-list-item>ETHENOS</nb-list-item>
+          <nb-list-item>CRUXIX</nb-list-item>
+          <nb-list-item>PENIS BEAM</nb-list-item>
+        </nb-list>
+      </nb-card>
+    </div>
+  </div>
 </div>
+
 <div class="row">
-  <nb-card>
-    <label for="lore">History:</label>
-    <textarea id="lore" name="lore" rows="8" cols="60" style="background-color: #ece3ff;">
-      What is your story Wizard?
-    </textarea>
-    <br><br>
-    <input type="submit" value="Submit">
-  </nb-card>
+  <div class="col-md-6">
+    <nb-card class="">
+      <nb-card-header>Token and XP</nb-card-header>
+        <nb-list>
+          <nb-list-item>XP Available</nb-list-item>
+          <nb-list-item>Tokens Available</nb-list-item>
+          <nb-list-item>Stats Boosted</nb-list-item>
+        </nb-list>
+    </nb-card>
+  </div>
+  <div class="col-md-6">
+    <nb-card>
+      <label for="lore">History:</label>
+      <textarea id="lore" name="lore" rows="8" cols="60" style="background-color: #ece3ff;">
+        What is your story, Wizard?
+      </textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+    </nb-card>
+  </div>
 </div>
+
+
