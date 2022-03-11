@@ -19,12 +19,14 @@ import {
   NbSidebarModule,
   NbToastrModule,
   NbWindowModule,
+  NbProgressBarModule,
 } from '@nebular/theme';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    NbProgressBarModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
