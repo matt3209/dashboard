@@ -2,6 +2,35 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 @import '~@nebular/theme/styles/global/breakpoints';
 
+
+
+.attribute_block {
+  text-align: center;
+}
+
+#level {
+  padding-top: 3%;
+  padding-right: 5%;
+  float: right;
+  font-size: 1.875em;
+}
+
+#level_rank {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#upgrade_button {
+  background-color: green;
+  color: white;
+  border-radius: 12px;
+}
+
+#dexterity {
+  background-color: pink;
+
+}
+
 @include nb-install-component() {
   .solar-card nb-card-header {
     border: none;
@@ -14,3 +43,5 @@
     }
   }
 }
+
+

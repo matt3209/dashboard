@@ -13,39 +13,50 @@
     </nb-card>
   </div>
 
-  <div class="col-md-4">
-    <div class="col">
+  <div class="col-lg-6">
       <nb-card class="">
-        <fieldset>
           <div style="display: block; margin-bottom: 10px;">
-            <label>FIRE</label>
+            <label>Wizard Type</label>
             <img src="assets/images/fire.png" style="width: 55px; position: relative;">
+            <span id="level">Level 4</span>
           </div>
-          <div style="display: block;">
-            <label>Strength</label>
+
+          <div class="attribute_block">
+            <div>
+              <label>Strength</label>
+              <progress id="strength" value="32" max="100">32%</progress>
+              <span id="level_rank">LEVEL: 5</span>
+              <button type="button" id="upgrade_button">UPGRADE</button>
+            </div>
+            <div>
+              <label>Dexterity</label>
+              <progress id="dexterity" value="32" max="100">32%</progress>
+              <span id="level_rank">LEVEL: 5</span>
+              <button type="button" id="upgrade_button">UPGRADE</button>
+            </div>
+            <div >
+              <label>Intelligence</label>
+              <progress id="Intelligence" value="32" max="100">32%</progress>
+              <span id="level_rank">LEVEL: 5</span>
+              <button type="button" id="upgrade_button">UPGRADE</button>
+            </div>
+            <div >
+              <label>Wisdom</label>
+              <progress id="Wisdom" value="32" max="100">32%</progress>
+              <span id="level_rank">LEVEL: 5</span>
+              <button type="button" id="upgrade_button">UPGRADE</button>
+            </div>
+            <div >
+              <label>Charisma</label>
+              <progress id="Charisma" value="32" max="100">32%</progress>
+              <span id="level_rank">LEVEL: 5</span>
+              <button type="button" id="upgrade_button">UPGRADE</button>
+            </div>
           </div>
-          <div style="display: block;">
-            <label>Dexterity</label>
-            <input label="Str" size="5" disabled="true" placeholder="5" type="text">
-          </div>
-          <div style="display: block;">
-            <label>Intelligence</label>
-            <input label="Str" size="5" disabled="true" placeholder="5" type="text">
-          </div>
-          <div style="display: block;">
-            <label>Wisdom</label>
-            <input label="Str" size="5" disabled="true" placeholder="5" type="text">
-          </div>
-          <div style="display: block;">
-            <label>Charisma</label>
-            <input label="Str" size="5" disabled="true" placeholder="5" type="text">
-          </div>
-        </fieldset>
       </nb-card>
-    </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-lg-2">
 
     <div class="col">
       <nb-card class="">
@@ -62,7 +73,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <nb-card class="">
       <nb-card-header>Token and XP</nb-card-header>
         <nb-list>
@@ -72,16 +83,15 @@
         </nb-list>
     </nb-card>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-8">
     <nb-card>
-      <label for="lore">History:</label>
+      <label for="lore">Wizard Lore</label>
       <textarea id="lore" name="lore" rows="8" cols="60" style="background-color: #ece3ff;">
-        What is your story, Wizard?
+      Nero is the second born of The King of Ronaine - Keggar. Nero is the Minister of Borneth, a region on Ronaine. He has exceptional talents in politics, often working on behalf of his father to keep peace within the realm.
+
+      Nero is part of the Genesis of Ronaine - the group that is helping Ryno search for his home of Etheen. Ryno's father Cultheer is brothers with Keggar, Nero's father, making them first cousins. This was discovered after Nero's brother Mikello performed a Dream Weaving to help Ryno recover his memories.
       </textarea>
       <br><br>
-      <input type="submit" value="Submit">
     </nb-card>
   </div>
 </div>
-
-
